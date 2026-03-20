@@ -226,7 +226,7 @@ function HeroSection() {
             </motion.div>
           </div>
 
-          {/* Profile Image Placeholder */}
+          {/* Profile Image */}
           <motion.div
             className="flex-1 flex justify-center"
             initial={{ opacity: 0, scale: 0.8 }}
@@ -234,15 +234,14 @@ function HeroSection() {
             transition={{ duration: 0.5, delay: 0.3 }}
           >
             <div className="relative">
-              <div className="w-64 h-64 sm:w-80 sm:h-80 rounded-full border-2 border-[#00ff88]/30 p-2 pulse-glow">
-                <div className="w-full h-full rounded-full bg-gradient-to-br from-[#00ff88]/20 to-[#00d4ff]/20 flex items-center justify-center border border-[#00ff88]/20">
-                  <div className="text-center">
-                    <Shield className="w-20 h-20 text-[#00ff88] mx-auto mb-4" />
-                    <p className="font-mono text-sm text-[#00ff88]/70">
-                      [Your Photo Here]
-                    </p>
-                  </div>
-                </div>
+              <div className="w-64 h-64 sm:w-80 sm:h-80 rounded-full border-2 border-[#00ff88]/30 p-2 pulse-glow overflow-hidden">
+                <Image
+                  src="/IMG_20260316_152557.jpg.jpeg"
+                  alt="Dinesh Lal Das"
+                  fill
+                  className="object-cover rounded-full"
+                  priority
+                />
               </div>
               {/* Decorative elements */}
               <div className="absolute -top-4 -right-4 w-8 h-8 border-t-2 border-r-2 border-[#00ff88]"></div>
